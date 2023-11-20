@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New Year Celebration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img id="logo" src="../images/logo.png" alt="Logo">
+        <div>
+            <ul class="ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#gifts">Gifts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="msg">
+            <div class="mask"></div>
+            <h3>HAPPY NEW YEAR 2024</h3>
+        </div>
+        <div class="countdown-container">
+            <span id="countdownText">00:00:00 AM<br>DD-MM-YYYY</span>
+        </div>
+    </nav>
+
+    <div id="questionContainer">
+        <h3 id="questionContainerNo">Questions for Rs. 10</h3>
+        <p>Questions Paragraph</p>
+    </div>
+
+    <div id="optionsContainer">
+        <div class="option"></div>
+        <div class="option"></div>
+        <div class="option"></div>
+        <div class="option"></div>
+    </div>
+
+    <div id="resultContainer"></div>
+
+    <div class="row-container">
+        <div id="questionNumber">Question No: 1</div>
+        <button id="buttonContainer" onclick="nextQuestion()">Next Question</button>
+    </div>
+    <script src="list.js" defer></script>
+</body>
+
+</html>
