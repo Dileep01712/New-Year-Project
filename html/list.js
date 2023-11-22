@@ -480,6 +480,8 @@ function checkAnswer(selectedOption) {
         optionElements[i].disabled = true;
     }
 
+    // console.log(selectedOption, correctAnswerIndex, questions[correctAnswerIndex]);
+
     if (selectedOption === correctAnswerIndex) {
         resultContainer.innerHTML = `<p>Correct answer, you have won Rs. ${levels[currentQuestionIndex]}</p>`;
         money = levels[currentQuestionIndex];
@@ -560,7 +562,7 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
-shuffleArray(questions);
+// shuffleArray(questions);
 
 
 
