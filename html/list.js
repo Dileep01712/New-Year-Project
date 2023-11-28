@@ -562,7 +562,6 @@ function shuffleArray(array) {
         [array[i], array[j]] = [array[j], array[i]];
     }
 }
-// shuffleArray(questions);
 
 
 
@@ -614,7 +613,7 @@ var countdownInterval = setInterval(updateCountdown, 1000);
 
 
 
-// Background Wallpapers
+// Background Images
 const backgrounds = [
     {
         src: '../images/image1.png',
