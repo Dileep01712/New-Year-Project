@@ -409,7 +409,6 @@ shuffleArray(questions);
 // Dispaly Questions:
 let currentQuestionIndex = 0;
 let money = 0;
-
 function displayQuestion() {
     const questionContainer = document.getElementById('questionContainer');
     const optionsContainer = document.getElementById('optionsContainer');
@@ -479,8 +478,6 @@ function checkAnswer(selectedOption) {
     for (let i = 0; i < optionElements.length; i++) {
         optionElements[i].disabled = true;
     }
-
-    // console.log(selectedOption, correctAnswerIndex, questions[correctAnswerIndex]);
 
     if (selectedOption === correctAnswerIndex) {
         resultContainer.innerHTML = `<p>Correct answer, you have won Rs. ${levels[currentQuestionIndex]}</p>`;
@@ -616,49 +613,50 @@ var countdownInterval = setInterval(updateCountdown, 1000);
 // Background Images
 const backgrounds = [
     {
-        src: '../images/image1.png',
+        src: '../images/image1.webp',
         width: '100%',
         height: '100vh'
     },
     {
-        src: '../images/image3.png',
+        src: '../images/image3.webp',
         width: '100%',
         height: '100vh'
     },
     {
-        src: '../images/image5.png',
+        src: '../images/image5.webp',
         width: '100%',
         height: '100vh'
     },
     {
-        src: '../images/image7.png',
+        src: '../images/image7.webp',
         width: '100%',
         height: '100vh'
     },
     {
-        src: '../images/image2.png',
+        src: '../images/image2.webp',
         width: '100%',
         height: '100vh'
     },
     {
-        src: '../images/image4.png',
+        src: '../images/image4.webp',
         width: '100%',
         height: '100vh'
     },
     {
-        src: '../images/image6.png',
+        src: '../images/image6.webp',
         width: '100%',
         height: '100vh'
     },
     {
-        src: '../images/image8.png',
+        src: '../images/image8.webp',
         width: '100%',
         height: '100vh'
     }
 ];
 
-// changeBackground();
 let currentBackgroundIndex = 0;
+updateBackground();
+changeBackground();
 function changeBackground() {
     const background = backgrounds[currentBackgroundIndex];
     document.body.style.backgroundRepeat = 'no-repeat';
@@ -666,7 +664,6 @@ function changeBackground() {
     document.body.style.backgroundSize = background.width + ' ' + background.height;
     currentBackgroundIndex = (currentBackgroundIndex + 1) % backgrounds.length;
 }
-changeBackground();
 setInterval(changeBackground, 5000);
 
 function updateBackground() {
